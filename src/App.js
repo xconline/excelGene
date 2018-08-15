@@ -23,6 +23,7 @@ class App extends Component {
                             <div className="svnContainer">
                                 <div className="svnSelectContainer">
                                     <Select
+                                        className="svnSelect"
                                         mode="multiple"
                                         style={{ width: '100%' }}
                                         placeholder="Please select"
@@ -32,7 +33,7 @@ class App extends Component {
                                     </Select>
                                 </div>
                                 <div className="svnButContainer">
-                                    <Button>更新</Button>
+                                    <Button id="updateBut">更新</Button>
                                     <Button>提交</Button>
                                 </div>
                             </div>

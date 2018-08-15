@@ -1,11 +1,16 @@
 @white: #fff;
 @black: #000000;
 @containerWidth: 25vw;
+@selectWidth: 15vw;
 @flex: {
     display: -webkit-flex; /* Safari */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+};
+@border: {
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
 };
 .header {
     background: #fff;
@@ -27,12 +32,23 @@
     @flex();
     flex-direction: column;
     width: @containerWidth;
+    margin: 20vh 0 0 0;
+    padding: 10px 0 10px 0;
+    @border();
     .svnButContainer {
         @flex();
+        margin-top: 2vh;
+        margin-right: 5vw;
+        justify-content: flex-end;
+        #updateBut {
+            margin-right: 5px;
+        }
     }
     .svnSelectContainer {
-        width: 15vw;
         @flex();
         justify-content: center;
+        .svnSelect {
+            width: @selectWidth !important;
+        }
     }
 }
